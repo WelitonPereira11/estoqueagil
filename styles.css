@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #b0c8ec;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(194, 95, 95, 0.5);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.cabecalho {
+    margin-left: 260px; /* Ajuste para evitar que a barra lateral sobreponha o conteúdo */
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    gap: 10%;
+    transform: translate(10%,-20%);
+}
+
+.opcao, .cliente {
+    margin-left: 260px; /* Garantir que todo o conteúdo fique fora da barra lateral */
+}
+
+.quadrado {
+    width: 220px;
+    height: 180px;
+    background-color: cyan; 
+    border-radius: 20px; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+}
+
+.img1 {
+    height: 40%;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
