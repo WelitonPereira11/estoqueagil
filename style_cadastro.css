@@ -18,7 +18,24 @@ body{
     border-radius: 15px;
 
   }
-  button {
+  .submit {
+    padding: 15px;
+    background-color: #004aad;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.submit:hover {
+  background-color: rgb(185, 247, 247);
+  cursor: pointer;
+  color: black;
+}
+
+
+  button{
     padding: 15px;
     background-color: #004aad;
     border: none;

@@ -1,70 +1,101 @@
-body {
-    display: flex;
+/* Reseta margens e padding */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #b0c8ec;
-    color: white;
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #004aad;
+}
+
+/* Cabeçalho fixo no topo */
+header.cabecalho {
+    background-color: #adb2b9;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 20;
+    width: 90%;
+    padding: 15px;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(194, 95, 95, 0.5);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-}
-
-.cabecalho {
-    margin-left: 260px; /* Ajuste para evitar que a barra lateral sobreponha o conteúdo */
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    display: flex;  
     justify-content: center;
-    align-items: center; 
-    gap: 10%;
-    transform: translate(10%,-20%);
+    align-items: right;
+    gap: 10px;
 }
 
-.opcao, .cliente {
-    margin-left: 260px; /* Garantir que todo o conteúdo fique fora da barra lateral */
+header.cabecalho h1 {
+    color: white;
+    font-size: 30px;
 }
 
-.quadrado {
-    width: 220px;
-    height: 180px;
-    background-color: cyan; 
-    border-radius: 20px; 
-    display: flex;
+header.cabecalho .logo {
+    height: 55px;
+}
+
+/* Barra Lateral */
+.lateral {
+    background-color: #619bc3;
+    height: 100vh; /* Preenche a altura toda da tela */
+    width: 180px;
+    position: fixed;
+    top: 80px; /* A barra lateral começa abaixo do cabeçalho fixo */
+    left: 0;
+    z-index: 1;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 26px;
+    color: white;
+    padding-top: 20px;
 }
 
-.img1 {
-    height: 40%;
-    width: 40%;
-    margin-top: 10px;
-    margin-bottom: -10px;
+/* Botões da Barra Lateral */
+.menu {
+    padding: 15px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+/* Ajustar local do botão "SAIR" */
+.sair {
+    margin-top: auto;
+    margin-top: 110%;
+}
+
+/* Links na Barra Lateral */
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+/* Efeito de Hover nos Botões */
+button:hover {
+    background-color: rgba(81, 192, 243, 0.267);
+    cursor: pointer;
+}
+
+.menu:hover {
+    background-color: #004aad;
+    cursor: pointer;
+    color: white;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 200px; /* Deixa espaço para a barra lateral */
+    padding-top: 100px; /* Espaço para o cabeçalho */
+    padding: 50px;
+    color: white;
+}
+
+/* Formatação do conteúdo dentro de main */
+.content {
+    text-align: center;
+    padding: 20px;
 }

@@ -38,3 +38,14 @@ body{
    text-align: center;
 
   }
+
+  .submit{
+    padding: 15px;
+    background-color: #004aad;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.568);
+    font-size: 20px;
+    color: white;
+  }

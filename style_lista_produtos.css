@@ -1,0 +1,147 @@
+    /*retira qualquer margem*/
+    * {
+        margin: 0px;
+        padding: 0px;
+    
+    }
+        /*todos os paragrafos*/
+    p {
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+        /*CRIANDO A BARRA LATERAL*/
+        .lateral {
+            background-color: #619bc3;
+            height: 110%;
+            width: 180px;
+            position: fixed;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+        
+        /*BOTOES MENU LATERAL*/
+        .menu {
+            padding: 15px;
+            width: 90%;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        /*AJUSTAR LOCAL DO BOTAO SAIR*/
+        .sair {
+            margin-top: auto;
+            margin-top: 110%;
+        }
+    
+        /*EDITANDO OS LINKS*/
+      a{
+        text-decoration: none; 
+        color: black;
+      }
+        /* MUDA OQUE APARECE NO BOTAO QUANDO PASSO O MOUSE POR CIMA*/
+     button:hover{
+        background-color: rgba(81, 192, 243, 0.267);
+        cursor: pointer;
+        }
+    
+    
+        .menu:hover{
+        background-color: #004aad;
+        cursor: pointer;
+        color: white;
+        }
+    
+    
+        /*TUDO OQUE TA DENTRO DE MAIN*/
+        main {
+            padding-top: 28px;
+            margin-left: 160px;
+        }
+        
+    body {
+        background-color: #004aad;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    
+        /*CABEÇALHO "ESTOQUE AGIL"*/
+    .cabecalho {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        display: flex;  
+        justify-content: center;
+        align-items: center; 
+        gap: 15%;
+        transform: translate(0%, -20%);
+      
+    }
+    
+            /*TODAS AS IMAGENS QUE NAO TEJA EM UMA DIV/BOTAO*/
+    img {
+        height: 55px;
+    }
+        /*altera a div opcao*/
+    .opcao{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center; 
+    
+        
+    }
+        /*editar os botoes*/
+    .botoes {
+        width: 200px;
+        height: 160px;
+        background-color: #619bc3; 
+        border-radius: 20px; 
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 23px;
+        gap: 20px;
+        color: white;
+        border: none;
+        
+    }
+    
+        /*imagens dentro dos botoes com a classe img1*/
+     .img1 {
+        height: 40%;
+        width: 40%;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    
+      }
+/* Ajustando a posição da tabela para a direita */
+table {
+    width: 88%; /* Ajusta a largura da tabela */
+    margin-left: auto;  /* Centraliza a tabela */
+    margin-right: auto; /* Centraliza a tabela */
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0);
+ 
+}
+
+/* Os estilos da tabela já estavam bons, mas para garantir */
+th, td {
+    padding: 8px;
+    text-align: left;
+    background-color: #619bc3;
+    border: 1px solid #ddd;
+    text-align: center;
+
+}
+
+th {
+    background-color: #f2f2f2;
+}
+ 
